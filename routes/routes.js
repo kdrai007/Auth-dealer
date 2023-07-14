@@ -32,8 +32,8 @@ Router.post('/auth/dealer_login', dealerLogin); // Endpoint for dealer login
 
 // Routes related to deals
 Router.post('/deal/:dealer_id/new_car', Cars); // Endpoint for adding a new car by a dealer
-Router.post('/deal/:dealer_id/vehicle_deal', vehicleDeal); // Endpoint for making a vehicle deal by a dealer
-Router.post('/deal/:dealer_id/sold_vehicle', soldVehicle); // Endpoint for marking a vehicle as sold by a dealer
+Router.post('/deal/:dealer_id/vehicle_deal', vehicleDeal); // Endpoint for making a vehicle deal by a dealer add query car_id
+Router.post('/deal/:dealer_id/sold_vehicle', soldVehicle); // Endpoint for marking a vehicle as sold by a dealer add query user_id and car_id
 
 Router.get('/deal/all_cars', getCars); // Endpoint for getting all available cars
 
