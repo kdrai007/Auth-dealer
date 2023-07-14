@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { config } from '../config.js';
 
+//middleware to validate jwt token;
 export const validateUser = async (req, res, next) => {
   const token =
     req.body.token || req.query.token || req.headers['access-token'];

@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+//exporting all required dotenv data
 export const config = {
   databaseUrl: process.env.DATABASE_URL,
   port: process.env.PORT,
